@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Counter from "./Counter";
-import waybackDiff from "wayback-diff";
+
+import { DiffContainer } from 'wayback-diff';
 
 document.addEventListener("DOMContentLoaded", function() {
-  ReactDOM.render(
-    React.createElement(Counter),
-    document.getElementById("mount")
-  );
+  return (
+    <DiffContainer fetchCallback = {null}/>
+    );
+    //ReactDOM.render(
+    //React.createElement(Counter),
+    //document.getElementById("mount")
 });
